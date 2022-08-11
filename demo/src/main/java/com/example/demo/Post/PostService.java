@@ -42,6 +42,9 @@ public class PostService {
         if(!exists){
             throw new IllegalStateException("doesnt exist");
         }
+        Post p =postRepository.findPostById(id).get();
+        p.addLike();
+        postRepository.save(p);
     }
 
     public void addDislike(Long id) {
@@ -49,6 +52,9 @@ public class PostService {
         if(!exists){
             throw new IllegalStateException("doesnt exist");
         }
+        Post p =postRepository.findPostById(id).get();
+        p.addDislike();
+        postRepository.save(p);
     }
 }
 //new Post(

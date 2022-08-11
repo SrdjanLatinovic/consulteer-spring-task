@@ -36,7 +36,12 @@ public class Post {
         this.text = text;
         this.timestamp = timestamp;
     }
-
+    public void addLike(){
+        this.likes++;
+    }
+    public void addDislike(){
+        this.dislikes++;
+    }
     public Integer getLikes() {
         return likes;
     }

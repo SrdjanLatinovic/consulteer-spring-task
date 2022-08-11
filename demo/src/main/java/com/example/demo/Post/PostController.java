@@ -32,10 +32,10 @@ public class PostController {
     public void deletePost(@PathVariable("postId") Long id){
         postService.deletePost(id);
     }
-    @PutMapping void addLike(@PathVariable("postId") Long id){
+    @PutMapping(value = "/like") void addLike(@PathVariable("postId") Long id){
         postService.addLike(id);
     }
-    @PutMapping void addDisLike(@PathVariable("postId") Long id){
+    @PutMapping(value = "/dislike") void addDisLike(@PathVariable("postId") Long id){
         postService.addDislike(id);
     }
 }

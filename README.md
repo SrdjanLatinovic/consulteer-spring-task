@@ -17,9 +17,9 @@ What things you need to install:
 
 ## Built With
 
-* [SpringBoot]([https://spring.io/projects/spring-boot]) - The web framework used
+* [SpringBoot](https://spring.io/projects/spring-boot) - The web framework used
 * [Maven](https://maven.apache.org/) - Dependency Management
-* [PostgrSQL](https://rometools.github.io/rome/) - Used as the SQL Database 
+* [PostgrSQL](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads) - Used as the SQL Database 
 
 ## Authors
 

@@ -2,9 +2,7 @@ package com.example.demo.Comment;
 
 import com.example.demo.Post.Post;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.sql.Timestamp;
 import java.time.Instant;
@@ -23,5 +21,10 @@ public class CommentController {
     @GetMapping
     public List<Comment> getComment(){
         return commentService.getComments();
+    }
+
+    @PostMapping
+    public void addNewComment(Comment comment, Long postId){
+        commentService.addNewComment(comment,postId);
     }
 }
